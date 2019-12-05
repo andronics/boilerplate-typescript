@@ -1,0 +1,25 @@
+{
+  "name": "@andronics/typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "TypeScript Boilerplate",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "prepublish": "tsc",
+  "scripts": {
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "start": "npm run serve",
+    "test": "jest --coverage --verbose",
+    "watch": "tsc -w",
+    "watch-test": "npm run test -- --watcAll"
+  },
+  "author": "Stephen Cox <andronics@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  }
+}
