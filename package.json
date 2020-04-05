@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "TypeScript Boilerplate",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "lib/types/index.d.ts",
   "prepublish": "tsc",
   "scripts": {
     "build": "tsc",
@@ -16,10 +16,21 @@
   "author": "Stephen Cox <andronics@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/cheerio": "^0.22.17",
+    "@types/config": "^0.0.36",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.14",
+    "@types/randomstring": "^1.1.6",
+    "@types/request-promise": "^4.1.46",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "config": "^3.3.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
   }
 }
